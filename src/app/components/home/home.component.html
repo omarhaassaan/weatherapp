@@ -1,0 +1,50 @@
+<div>
+    <ul class="list-group flex-row" [class.background-dark]="getmode()" [class.background-light]="!(getmode())">
+        <li class="list-group-item curser" (click)="larrangeObjs()">
+            <img src="../../../assets/images/left.png" alt="leftcurser">
+        </li>
+        <li class="list-group-item obj">
+            <div class="frame ">
+                <p>{{this.objService.getObj1Name()}}</p>
+                <img [src]="'../../../assets/images/'+this.objService.getObj1Pic()" class="weather" alt="Sunny Weather">
+                <hr style="border-color: transparent">
+                <p>Degree : {{this.objService.getObj1Deg()}}</p>
+                <a (click)="this.objService.deleteItem1()">
+                    <img src="../../../assets/images/deleteitem.png" class="dicon" alt="deleteitem.png">
+                </a>
+
+            </div>
+        </li>
+        <li class="list-group-item obj">
+            <div class="frame ">
+                <p>{{this.objService.getObj2Name()}}</p>
+                <img [src]="'../../../assets/images/'+this.objService.getObj2Pic()" class="weather" alt="Sunny Weather">
+                <p>Degree : {{this.objService.getObj2Deg()}}</p>
+                <a (click)="this.objService.deleteItem2()">
+                    <img src="../../../assets/images/deleteitem.png" class="dicon" alt="deleteitem.png">
+                </a>
+            </div>
+        </li>
+        <li class="list-group-item obj">
+            <div class="frame">
+                <p>Add City</p>
+                <hr>
+                <hr>
+                <div class="Input">
+                    <label>City : </label><input #city type="text">
+                </div>
+                <hr>
+                <hr>
+                <div class="Input">
+                    <label>Deg. : </label><input #deg type="number">
+                </div>
+                <hr>
+                <hr>
+                <button class="btn btn-success" (click)="addCity(city,deg)">Add</button>
+            </div>
+        </li>
+        <li class="list-group-item curser" (click)="rarrangeObjs()">
+            <img src="../../../assets/images/right.png" alt="rightcurser">
+        </li>
+    </ul>
+</div>

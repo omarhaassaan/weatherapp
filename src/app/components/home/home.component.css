@@ -1,0 +1,47 @@
+.curser{
+    width:5%;
+    cursor: pointer;
+}
+.curser img{
+    width: 100%;
+    margin-top: 50vh;
+}
+.frame{
+    text-transform: capitalize;
+}
+li{
+    background-color: transparent;
+    border-radius: 20px;
+    border-color: red;
+}
+.obj{
+    font-size: 35px;
+    text-align: center;
+    width:30%;
+}
+.weather{
+width: 70%;
+}
+p:hover{
+    color : aqua;
+}
+li:hover{
+    border-color: blue;
+    border-width: 5px;
+}
+.dicon{
+    width:10%;
+}
+a{
+    cursor: pointer;
+}
+hr{
+    border-color: transparent;
+}
+.Input label{
+    width:30% ;
+    size: 10px;
+}
+.Input input{
+    width: 60%;
+}

@@ -1,0 +1,10 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+.background-light{
+    background-image: linear-gradient(to bottom right,#f0ad4e,rgba(255,174,66,0.5));
+    height: 92vh;
+}
+.background-dark{
+    background-image: linear-gradient(to bottom,#292b2c,brown);
+    color: white;
+    height: 92vh;
+}
